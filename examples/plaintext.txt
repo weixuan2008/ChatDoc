@@ -1,0 +1,3 @@
+The data plane handles requests to write and read records in indexes. Indexes are partitioned into one or more logical namespaces, and all write and read requests are scoped by namespace.
+For each index, there is a unique URL for performing data plane operations in the form of https://{index_host}/{operation}. The Pinecone SDKs construct these URLs for you. However, when using the API directly, you must explicitly specify them.
+You can get index URLs in the Pinecone console or using the describe_index operation. For more details, see Get an index endpoint.
