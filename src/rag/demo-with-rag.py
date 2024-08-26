@@ -25,9 +25,9 @@ llm = Ollama(model="llama3.1",
 loader = WebBaseLoader("https://docs.smith.langchain.com/user_guide")
 docs = loader.load()
 
-loader = DirectoryLoader("./Books", glob="**/*.docx")
-books = loader.load()
-len(books)
+# loader = DirectoryLoader("./Books", glob="**/*.docx")
+# books = loader.load()
+# len(books)
 
 # Vector store things
 embeddings = OllamaEmbeddings(model="nomic-embed-text")
